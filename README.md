@@ -124,21 +124,42 @@ Write the command(s) that you used to do this - as well as its output - below:
 
 Write the command(s) that you used to do this below:
 ----------
-
-==========
+cd downloads
+V217-M11:downloads bryan.pierrelouis02$ cd science-fiction
+-bash: cd: science-fiction: No such file or directory
+V217-M11:downloads bryan.pierrelouis02$ cd mtec1003-lab-03
+V217-M11:mtec1003-lab-03 bryan.pierrelouis02$ cd books
+V217-M11:books bryan.pierrelouis02$ cd science-fiction
+V217-M11:science-fiction bryan.pierrelouis02$ pwd
+/Users/bryan.pierrelouis02/downloads/mtec1003-lab-03/books/science-fiction
 13. Immediately change back to the mtec1003-lab-03 folder with a single command using a *relative* path.
 
 Write the command(s) that you used to do this below:
 ----------
+V217-M11:science-fiction bryan.pierrelouis02$ cd ../..
+V217-M11:mtec1003-lab-03 bryan.pierrelouis02$ 
 
 ==========
 14. Find out what the most recently modified directory is in mtec1003 (there are only 3 to choose from)?  How would you find this out?  Hint: perhaps using something to show the modified date... and sort it by time.
 
 Write the command(s) that you used to do this below:
 ----------
+drwxr-xr-x@   5 bryan.pierrelouis02  ACADEMIC\Domain Users   160 Feb 11 18:57 books
+drwxr-xr-x@ 129 bryan.pierrelouis02  ACADEMIC\Domain Users  4128 Feb 11 18:25 logs
+drwxr-xr-x@   6 bryan.pierrelouis02  ACADEMIC\Domain Users   192 Feb 13  2013 web==========
 
-==========
 15. Create a compressed archive of the logs folder - that is... take the contents of logs and create a single archive (.tar), and compress (.gz)
 
 Write the command(s) that you used to do this below:
-----------
+----------  V217-M11:mtec1003-lab-03 bryan.pierrelouis02$ tar -cvf access-0.log.tar logs
+a logs
+a logs/access-74.log
+a logs/access-60.log
+a logs/access-48.log
+a logs/access-152.log
+a logs/access-191.log
+a logs/access-49.log
+a logs/access-63.log
+a logs/access-187.log
+a logs/access-178.log
+a logs/access-150.log
